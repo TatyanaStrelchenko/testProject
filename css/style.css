@@ -1,0 +1,161 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: Roboto;
+   background: #2c2832;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 2rem;
+ }
+
+ .container {
+   position: relative;
+   max-width: 1320px;
+   margin: 0 auto;
+   padding: 120px 20px;
+ }
+
+ .container:after {
+   position: absolute;
+   content: "";
+   top: 0;
+   right: 80px;
+   width: 620px;
+   height: 40px;
+   background: #52285f;
+ }
+
+ .info-section h2 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   font-size: 54px;
+   line-height: 1.2;
+   margin-bottom: 80px;
+ }
+
+ .info-holder {
+   display: grid;
+   grid-template-columns: 400px calc(100% - 780px) 300px;
+   grid-row-gap: 20px;
+   grid-column-gap: 40px;
+ }
+
+ .info-holder img {
+   display: flex;
+   max-width: 100%;
+ }
+
+ .info-holder p {
+   margin-bottom: 25px;
+ }
+
+ .links {
+   color: #ff5621;
+   text-decoration: underline;
+   cursor: pointer;
+   transition: opacity 0.25s ease;
+ }
+
+ .links:hover {
+   text-decoration: none;
+   opacity: 0.7;
+ }
+
+ .info-text {
+   font-family: Poppins;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 32px;
+   margin: 0;
+   padding-top: 10px;
+   border-top: 1px solid rgba(255, 255, 255, 0.96);
+ }
+
+ .number-block {
+   max-width: 300px;
+   margin: 0 auto;
+ }
+
+ .number {
+   font-family: Poppins;
+   font-size: 100px;
+   font-weight: 700;
+   line-height: 96px;
+   margin-bottom: 10px;
+ }
+
+ @media only screen and (max-width: 1200px) {
+   .container {
+     padding: 60px 40px;
+   }
+ }
+
+ @media only screen and (max-width: 768px) {
+   .container {
+     padding: 40px 30px;
+   }
+ }
+
+ @media only screen and (max-width: 768px) {
+   .container:after {
+     height: 30px;
+   }
+ }
+
+ @media only screen and (max-width: 1200px) {
+   .info-section h2 {
+     font-size: 40px;
+     margin-bottom: 40px;
+   }
+ }
+
+ @media only screen and (max-width: 768px) {
+   .info-section h2 {
+     font-size: 25px;
+     margin-bottom: 20px;
+   }
+ }
+
+ @media only screen and (max-width: 1200px) {
+   .info-holder {
+     grid-template-columns: 300px calc(100% - 680px) 300px;
+   }
+ }
+
+ @media only screen and (max-width: 1024px) {
+   .info-holder {
+     grid-template-columns: 1fr;
+   }
+ }
+
+ @media only screen and (max-width: 1024px) {
+   .info-holder img {
+     margin: 0 auto;
+   }
+ }
+
+ @media only screen and (max-width: 768px) {
+   .info-holder p {
+     margin-bottom: 15px;
+   }
+ }
+
+ @media only screen and (max-width: 1200px) {
+   .info-text {
+     padding-top: 5px;
+     font-size: 20px;
+   }
+ }
+
+ @media only screen and (max-width: 1200px) {
+   .number {
+     font-size: 80px;
+     line-height: 75px;
+     padding-bottom: 5px;
+   }
+ }
