@@ -93,69 +93,54 @@
    .container {
      padding: 60px 40px;
    }
- }
 
- @media only screen and (max-width: 768px) {
-   .container {
-     padding: 40px 30px;
+   .info-holder {
+     grid-template-columns: 300px calc(100% - 680px) 300px;
    }
- }
 
- @media only screen and (max-width: 768px) {
-   .container:after {
-     height: 30px;
+   .info-text {
+     padding-top: 5px;
+     font-size: 20px;
    }
- }
 
- @media only screen and (max-width: 1200px) {
+   .number {
+     font-size: 80px;
+     line-height: 75px;
+     padding-bottom: 5px;
+   }
+
    .info-section h2 {
      font-size: 40px;
      margin-bottom: 40px;
    }
  }
 
- @media only screen and (max-width: 768px) {
-   .info-section h2 {
-     font-size: 25px;
-     margin-bottom: 20px;
-   }
- }
-
- @media only screen and (max-width: 1200px) {
-   .info-holder {
-     grid-template-columns: 300px calc(100% - 680px) 300px;
-   }
- }
 
  @media only screen and (max-width: 1024px) {
    .info-holder {
      grid-template-columns: 1fr;
    }
- }
 
- @media only screen and (max-width: 1024px) {
    .info-holder img {
      margin: 0 auto;
    }
  }
 
  @media only screen and (max-width: 768px) {
+   .container {
+     padding: 40px 30px;
+   }
+
+   .container:after {
+     height: 30px;
+   }
+
+   .info-section h2 {
+     font-size: 25px;
+     margin-bottom: 20px;
+   }
+
    .info-holder p {
      margin-bottom: 15px;
-   }
- }
-
- @media only screen and (max-width: 1200px) {
-   .info-text {
-     padding-top: 5px;
-     font-size: 20px;
-   }
- }
-
- @media only screen and (max-width: 1200px) {
-   .number {
-     font-size: 80px;
-     line-height: 75px;
-     padding-bottom: 5px;
    }
  }
